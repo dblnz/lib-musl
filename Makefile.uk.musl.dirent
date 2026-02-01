@@ -23,6 +23,9 @@ LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/fdopendir.c
 LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/opendir.c
 LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/readdir.c
 LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/scandir.c
+LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/rewinddir.c
+LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/seekdir.c
+LIBMUSL_DIRENT_SRCS-y += $(LIBMUSL)/src/dirent/telldir.c
 endif
 
 $(eval $(call _libmusl_import_lib,dirent,$(LIBMUSL_DIRENT_HDRS-y),$(LIBMUSL_DIRENT_SRCS-y)))
